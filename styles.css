@@ -6,9 +6,10 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 4fr 5fr;
-    /* gap: 5px; */
+    grid-template-rows: 1fr 1.2fr 8fr;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: 100vh
 }
 
 .sidebar {
@@ -19,40 +20,51 @@
     color: #FFFFFF;
 }
 
-.sidebar > div {
-    padding-bottom: 40px;
-}
-
 .dash img {
-    margin-right: 10px;
+    margin-right: 1rem;
     width: 3rem;
 }
 
 .dash {
     display: flex;
-    margin-left: 20px;
-    font-size: 1.3rem;
-    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.sideflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-block-1 {
+    padding-bottom: 3rem;
+
 }
 
 .side-block-1 div {
     display: flex;
-    margin-left: 30px;
-    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+
 }
 
 .side-block-1 img {
-    margin-right: 20px;
+    margin-right: 1.5rem;
 }
 
 .side-block-2 div {
     display: flex;
-    margin-left: 30px;
-    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    padding: 0.7rem;
 }
 
 .side-block-2 img {
-    margin-right: 20px;
+    margin-right: 1.5rem;
 }
 
 .header {
@@ -60,6 +72,7 @@
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-color: #eff6ff;
+    justify-content: space-between;
 }
 
 .header {
@@ -68,18 +81,15 @@
 
 .header1 {
     display: flex;
-    padding: 10px;
+    padding: 1rem;
     margin: 1rem;
-    margin-left: 2rem;
-    padding-right: 20rem;
-    align-items: center;
 }
 
 .header2 {
     display: flex;
     padding: 10px;
     margin: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 1rem; */
     align-items: center;
     font-size: 1.2rem;
 
@@ -114,9 +124,18 @@
     grid-column: 2 / 4;
     grid-row: 2 / 3;
     background-color: #eff6ff;
+
 }
 
+.main h2 {
+    font-size: 1.5rem;
+}
 
+.main p {
+    font-size: 1.3rem;
+    color: rgb(112, 112, 108);
+    padding-top: 0.5rem;
+}
 
 .main {
     display: grid;
@@ -124,10 +143,57 @@
     background-color: #93c5fd;
 }
 
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.main-grid div {
+    background: linear-gradient(to left, #eff6ff 98%, #d2a605 2%);
+    border-radius: 10px;
+
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+
+}
+
 .announce {
     display: grid;
     grid-column:  3 / 4;
     background-color: #93c5fd;
+}
+
+.side-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.side-div div {
+    background-color: #eff6ff;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+}
+
+.announce h2 {
+    font-size: 1.2rem;
+}
+
+.announce1 > div > h2 {
+    padding-bottom: 0.2rem;
+}
+
+.announce1 > div > p {
+    padding-bottom: 0.5rem;
+    color: rgb(112, 112, 108)
 }
 
 button {
@@ -142,10 +208,16 @@ button {
     margin-right: 1.2rem;
 }
 
+button:hover {
+    background-color: #93c5fd;
+
+}
+
 .flex-buttons {
     display: flex;
     margin-left: 2rem;
     align-items: center;
+    justify-content: space-between
 
 }
 
@@ -154,7 +226,7 @@ button {
 }
 
 .texts {
-    margin-right: 26rem;
+    margin-right: 28rem;
     align-items: center;
 }
 
@@ -166,3 +238,39 @@ button {
 .main {
     font-size: 2rem;
 }
+
+.insta1, .insta2, .insta3, .insta4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texts1 p {
+    padding-top: 0.3rem;
+    color: rgb(112, 112, 108);
+}
+
+.texts2 p {
+    padding-top: 0.3rem;
+    color: rgb(112, 112, 108);
+}
+
+.texts3 p {
+    padding-top: 0.3rem;
+    color: rgb(112, 112, 108);
+}
+
+.texts4 p {
+    padding-top: 0.3rem;
+    color: rgb(112, 112, 108);
+}
+
+#button {
+    margin-top: 1rem;
+    align-content: flex-end;
+    background-color: #d2a605;
+    width: 7rem;
+    height: 2rem;
+}
+
+
